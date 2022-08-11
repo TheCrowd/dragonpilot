@@ -19,7 +19,7 @@ def logging(started, params, CP: car.CarParams) -> bool:
 
 procs = [
   # due to qualcomm kernel bugs SIGKILLing camerad sometimes causes page table corruption
-  NativeProcess("camerad", "system/camerad", ["./camerad"], unkillable=True, callback=driverview),
+  NativeProcess("camerad", "system/camerad", ["./camerad"], unkillable=True), #, callback=driverview),
   NativeProcess("clocksd", "system/clocksd", ["./clocksd"]),
   # NativeProcess("logcatd", "system/logcatd", ["./logcatd"]),
   # NativeProcess("proclogd", "system/proclogd", ["./proclogd"]),
@@ -69,7 +69,7 @@ procs = [
   PythonProcess("mapd", "selfdrive.mapd.mapd"),
   PythonProcess("systemd", "selfdrive.dragonpilot.systemd", offroad=True),
   PythonProcess("gpxd", "selfdrive.dragonpilot.gpxd"),
-  PythonProcess("otisserv", "selfdrive.dragonpilot.otisserv", offroad=True),
+  #PythonProcess("otisserv", "selfdrive.dragonpilot.otisserv", offroad=True),
   # PythonProcess("loggerd", "selfdrive.dragonpilot.loggerd"),
 ]
 

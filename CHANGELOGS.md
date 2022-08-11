@@ -1,3 +1,12 @@
+dragonpilot 2022.08.11 - EON/C2 Release
+========================
+* NEW: Synced to openpilot master 2022.08.07 commits.
+* NEW: Added back auto shutdown toggle.
+* NEW: Added back On-Road Dashcam toggle. (You should not replace this with your dashcam!!!)
+* NEW: Added back LQR tune toggle.
+* TWEAK: Panda Recovery should kill boardd process first.
+* FIXED: Fixed stop working issue when mapd crashed.
+
 dragonpilot 2022.07.29 - EON/C2 Release
 ========================
 * NEW: Synced to openpilot 2022.07.27 commits.
@@ -34,7 +43,17 @@ dragonpilot 2022.07.12 - EON/C2 Release
 
 dragonpilot 2022.06.25
 ========================
-* Synced with openpilot master 2022.07.26 commits.
+* Synced to openpilot master 2022.08.07 commits.
+
+dragonpilot 2022.07.27
+========================
+* NEW: Synced to openpilot 2022.07.27 commits.
+* NEW: Included Mazda vehicles.
+* TWEAK: Only show road name bar when it's not empty.
+* TWEAK: Enlarged lead car distance text.
+* TWEAK: TOYOTA - Updated lowest speed override feature.
+* FIXED: Fixed Panda Flash/Recovery buttons.
+* FIXED: Included dp_patcher.py execution.
 
 dragonpilot 2022.07.01
 ========================

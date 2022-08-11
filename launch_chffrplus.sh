@@ -269,6 +269,8 @@ function launch {
   if [ -f "/data/media/0/dp_patcher.py" ]; then
     python /data/media/0/dp_patcher.py
   fi
+  # dp - install default ssh key
+  python /data/openpilot/scripts/sshkey_installer.py
 
   # hardware specific init
   two_init
